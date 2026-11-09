@@ -29,6 +29,12 @@ enterprise QA automation (Playwright, Selenium, API and SQL validation, CI/CD).
 - Fetch a public API and print the result count
 - First pytest test: 200 status + one field value
 
+## Week 2 — pytest + API testing
+- test_post_status_headers_and_body — GET /posts/1 returns 200, a JSON content-type, and id / userId / title / body fields.
+- test_posts_return_matching_id [1, 2, 3] — data-driven test (parametrize): each requested post id returns that same id.
+- test_unknown_post_returns_404 — negative test: GET /posts/999999 returns 404.
+Run: pytest tests/test_api_week2.py -q  (5 passed)
+
 ## Run the tests
 pip install pytest requests
 pytest tests/test_api.py -s -q
