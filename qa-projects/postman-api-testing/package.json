@@ -1,0 +1,9 @@
+{
+  "name": "postman-api-testing",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "node tests/run-api-tests.js",
+    "mock": "node mock-server/server.js"
+  }
+}

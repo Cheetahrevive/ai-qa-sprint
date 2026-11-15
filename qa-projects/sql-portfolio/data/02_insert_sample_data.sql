@@ -1,0 +1,46 @@
+INSERT INTO customers (customer_id, first_name, last_name, email, city, created_at) VALUES
+(1,'Ravi','Kalagara','ravi@example.com','Irving','2026-01-05'),
+(2,'Priya','Sharma','priya@example.com','Dallas','2026-01-12'),
+(3,'Amit','Patel','amit@example.com','Austin','2026-02-03'),
+(4,'Sara','Johnson','sara@example.com','Houston','2026-02-18'),
+(5,'David','Lee','david@example.com','Irving','2026-03-01'),
+(6,'Meena','Iyer','meena@example.com','Plano','2026-03-15'),
+(7,'John','Smith','john@example.com','Dallas','2026-04-02'),
+(8,'Anita','Rao','anita@example.com','Austin','2026-04-20');
+INSERT INTO products (product_id, product_name, category, price, stock) VALUES
+(1,'Sauce Labs Backpack','Bags',29.99,25),
+(2,'Sauce Labs Bike Light','Lights',9.99,40),
+(3,'Sauce Labs Bolt T-Shirt','Clothing',15.99,60),
+(4,'Sauce Labs Fleece Jacket','Clothing',49.99,15),
+(5,'Sauce Labs Onesie','Clothing',7.99,80),
+(6,'Test.allTheThings() T-Shirt (Red)','Clothing',15.99,35),
+(7,'Wireless Mouse','Electronics',24.50,50),
+(8,'Mechanical Keyboard','Electronics',79.00,20),
+(9,'USB-C Cable','Electronics',12.99,100),
+(10,'Laptop Stand','Electronics',39.99,0);
+INSERT INTO orders (order_id, customer_id, order_date, status) VALUES
+(101,1,'2026-05-01','Delivered'),
+(102,2,'2026-05-02','Delivered'),
+(103,1,'2026-05-10','Shipped'),
+(104,3,'2026-05-11','Delivered'),
+(105,4,'2026-05-15','Cancelled'),
+(106,5,'2026-05-20','Delivered'),
+(107,2,'2026-06-01','Delivered'),
+(108,6,'2026-06-03','Shipped'),
+(109,7,'2026-06-05','Delivered'),
+(110,1,'2026-06-12','Delivered'),
+(111,8,'2026-06-15','Pending'),
+(112,3,'2026-06-18','Delivered');
+INSERT INTO order_items (order_item_id, order_id, product_id, quantity, unit_price) VALUES
+(1,101,1,1,29.99),(2,101,2,1,9.99),
+(3,102,3,2,15.99),
+(4,103,4,1,49.99),
+(5,104,7,1,24.50),(6,104,9,2,12.99),
+(7,105,5,1,7.99),
+(8,106,8,1,79.00),
+(9,107,1,1,29.99),(10,107,6,1,15.99),
+(11,108,2,3,9.99),
+(12,109,10,1,39.99),
+(13,110,3,1,15.99),(14,110,5,2,7.99),
+(15,111,9,1,12.99),
+(16,112,7,2,24.50);
