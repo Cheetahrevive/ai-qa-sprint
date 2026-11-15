@@ -1,0 +1,3 @@
+Manual testing finds bugs early.
+Automation testing catches regressions fast.
+Good QA protects the customer.

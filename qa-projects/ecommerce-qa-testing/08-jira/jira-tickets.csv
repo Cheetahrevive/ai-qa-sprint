@@ -1,0 +1,12 @@
+Key,Type,Summary,Status,Priority,Linked Test Case,Linked Requirement
+SHOP-101,Epic,SauceDemo practice release,In Progress,P1,,
+SHOP-102,Story,Shopper logs in securely,Done,P1,TC-001;TC-002;TC-003;TC-004,REQ-01;REQ-02
+SHOP-105,Story,Shopper sorts products by price and name,Done,P2,TC-006;TC-007,REQ-04
+SHOP-110,Story,Shopper manages cart items,Done,P1,TC-009;TC-010;TC-011;TC-012;TC-013;TC-014,REQ-06;REQ-07
+SHOP-118,Story,Checkout shows item total tax and total,Done,P1,TC-015;TC-016;TC-017,REQ-08;REQ-09
+SHOP-121,Story,Order completion confirmation,Done,P1,TC-018;TC-019,REQ-10
+SHOP-124,Story,Shopper logs out from side menu,Done,P2,TC-020;TC-024,REQ-11
+SHOP-128,Bug,problem_user product images do not match products,Open,P2,TC-021,REQ-12
+SHOP-131,Bug,problem_user Add to Cart fails for some products,Open,P2,TC-022,REQ-12
+SHOP-115,Task,Write test cases for core shopping flow,Done,P1,,
+SHOP-116,Task,Execute regression run and publish report,Done,P1,,
